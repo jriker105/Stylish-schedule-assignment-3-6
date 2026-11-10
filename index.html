@@ -4,17 +4,27 @@
         <title>Stylish Schedule Assignment 3.6</title>
         <style>
             table{
-                border="2px"
-                border-collapse="collapse"
+                border:"2px";
+                border-collapse:"collapse";
+            }
+            .col1{
+                background-color:#aeaeae;
+            }
+            .tableheader{
+                font-family:Verdana, 'Geneva', Tahoma, sans-serif;
             }
         </style>
     </head>
     <body>
         <table>
-            <tr>
+            <colgroup>
+                <col class="col1">
+                <col>
+            </colgroup>
+            <tr class="tableheader">
                 <th colspan="2">Sunday</th>
             </tr>
-            <tr>
+            <tr class="tableheader">
                 <th>Time</th>
                 <th>My Alibi</th>
             </tr>
@@ -59,7 +69,7 @@
                 <td>Arive at home (if your lucky you might get 7 hours of sleep tonight, maybe)</td>
             </tr>
             <tr>
-                <td colspan="2">So based upon this 100% confirmed factually correct information, I clearly can not have been guilty of eating the salt</td>
+                <td colspan="2" class="tableheader">So based upon this 100% confirmed factually correct information, I clearly can not have been guilty of eating the salt</td>
             </tr>
         </table>
     </body>
